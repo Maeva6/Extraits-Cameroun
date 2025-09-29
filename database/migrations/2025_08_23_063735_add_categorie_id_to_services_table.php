@@ -11,12 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('services', function (Blueprint $table) {
-    $table->foreignId('categorie_id')
-          ->nullable()
-          ->constrained('categorie')
-          ->onDelete('set null');
+//         Schema::table('services', function (Blueprint $table) {
+//     $table->foreignId('categorie_id')
+//           ->nullable()
+//           ->constrained('categorie')
+//           ->onDelete('set null');
+// });
+Schema::table('services', function (Blueprint $table) {
+    if (!Schema::hasColumn('services', 'categorie_id')) {
+        $table->unsignedBigInteger('categorie_id');
+    }
 });
+
 
     }
 
