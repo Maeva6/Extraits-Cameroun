@@ -10,9 +10,10 @@ WORKDIR /var/www/html
 COPY . .
 
 RUN composer install --no-dev --optimize-autoloader
+RUN echo "APP_KEY=" > .env
 RUN php artisan key:generate
 RUN chmod -R 775 storage bootstrap/cache
 
 EXPOSE 8000
 CMD php artisan serve --host=0.0.0.0 --port=8000
-RUN echo "APP_KEY=" > .env
+
