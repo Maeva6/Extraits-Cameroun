@@ -2,7 +2,9 @@
 FROM node:20 AS frontend
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci --no-audit --no-fund --omit=dev
+# RUN npm ci --no-audit --no-fund --omit=dev
+RUN npm ci --no-audit --no-fund
+
 COPY . .
 RUN npm run build
 
