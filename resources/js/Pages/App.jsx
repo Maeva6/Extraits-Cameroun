@@ -34,7 +34,7 @@ import ProduitLab from './pages/pagesLab/produitLab';
 import FournisseurLab from './pages/pagesLab/fournisseurLab';
 import FormuleLab from './pages/pagesLab/formuleLaboratoire';
 import HistoriqueReapprovisionnementLab from './pages/pagesLab/historiqueReapprovisionnement';
-import Login from '../components/reutilisable/page de connexion';
+import Login from '../Components/reutilisable/PageConnexion';
 import ProductionLab from './pages/pagesLab/produitLab';
 
 //Import vendeur
