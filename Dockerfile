@@ -2,9 +2,7 @@
 FROM node:20 AS frontend
 WORKDIR /app
 COPY package*.json ./
-# RUN npm ci --no-audit --no-fund --omit=dev
 RUN npm ci --no-audit --no-fund
-
 COPY . .
 RUN npm run build
 
@@ -14,17 +12,15 @@ FROM php:8.2-fpm
 RUN apt-get update && apt-get install -y \
     unzip git curl libzip-dev \
     && docker-php-ext-install pdo pdo_mysql zip
-FROM composer:2 AS composer
 
+# Installer composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www/html
 COPY . .
 
-# Copie les assets compilés par Vite
-# COPY --from=frontend /app/public/build public/build
+# Copie les assets compilés par Vite (y compris manifest.json)
 COPY --from=frontend /app/public/build ./public/build
-
 
 RUN composer install --no-dev --optimize-autoloader
 RUN cp .env.example .env
