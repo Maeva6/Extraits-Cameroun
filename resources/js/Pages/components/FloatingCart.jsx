@@ -3,7 +3,9 @@ import { useCartStore } from "../store/CartStore";
 import { useState, useRef, useEffect } from "react";
 import { router } from "@inertiajs/react";
 import CartIcon from "../Auth/assets/icons/cart.svg";
+import axios from "axios";
 
+axios.defaults.withCredentials = true;
 export default function FloatingCart({ fromHeader = false }) {
   const {
     cartItems,

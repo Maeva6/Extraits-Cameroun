@@ -22,7 +22,9 @@ WORKDIR /var/www/html
 COPY . .
 
 # Copie les assets compilés par Vite
-COPY --from=frontend /app/public/build public/build
+# COPY --from=frontend /app/public/build public/build
+COPY --from=frontend /app/public/build ./public/build
+
 
 RUN composer install --no-dev --optimize-autoloader
 RUN cp .env.example .env
