@@ -499,7 +499,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { User, Bell, Search, Trash, Plus, Download, ChevronDown, X, Upload} from 'lucide-react';
 import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+// import 'react-datepicker/dist/react-datepicker.css';
 import Navbar from "../components/navBar";
 import ConfirmDialog from '../reutilisable/popUpSuppressionProduit';
 import NotificationsAdmin from '../reutilisable/notificationAdmin';
