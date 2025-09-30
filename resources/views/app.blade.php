@@ -8,7 +8,7 @@
         <!-- Scripts -->
         @routes
         @viteReactRefresh
-         @vite(['resources/css/app.css', 'resources/js/app.jsx'])
+         @vite(['resources/css/app.css', 'resources/js/Pages/Dashboard.jsx'])
     @inertiaHead
 
         <!-- Fonts -->
