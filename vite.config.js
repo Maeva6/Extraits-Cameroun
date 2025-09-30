@@ -7,40 +7,20 @@ import path from 'path';
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css','resources/js/app.jsx'],
+            input: ['resources/css/app.css', 'resources/js/app.jsx'],
             refresh: true,
         }),
         react(),
-         tailwindcss(),
+        tailwindcss(),
     ],
     css: {
         postcss: {},
     },
-     resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'resources/js'),
+    resolve: {
+        alias: {
+            '@': path.resolve(__dirname, 'resources/js'),
+        },
     },
-  },
-  //  build: {
-  //       rollupOptions: {
-  //           input: {
-  //               main: 'resources/js/app-client.jsx',
-  //               admin: 'resources/js/app-admin.jsx',
-  //           },
-  //       },
-  //   },
+    // 🔥 Ajoute ceci pour forcer Vite à générer des URLs relatives
+    base: '', 
 });
-// import { defineConfig } from 'vite';
-// import laravel from 'laravel-vite-plugin';
-// import react from '@vitejs/plugin-react';
-
-// export default defineConfig({
-//     plugins: [
-//         laravel({
-//             input: ['resources/css/app.css', 'resources/js/app.jsx'],
-//             refresh: true,
-//         }),
-//         react(),
-//     ],
-// });
-
