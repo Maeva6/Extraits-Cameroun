@@ -5,11 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title inertia>{{ config('app.name', 'Laravel') }}</title>
-        <!-- Scripts -->
-        @routes
-        @viteReactRefresh
-         @vite(['resources/css/app.css', 'resources/js/app.jsx'])
-    @inertiaHead
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -17,9 +12,10 @@
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        
-        <!-- @vite(['resources/css/app.css','resources/js/app.jsx', "resources/js/Pages/{$page['component']}.jsx"])
-        @inertiaHead -->
+        @routes
+        @viteReactRefresh
+        @vite(['resources/css/app.css', 'resources/js/app.jsx'])
+        @inertiaHead
     </head>
     <body class="font-sans antialiased">
         @inertia
