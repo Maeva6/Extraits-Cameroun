@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
   import React, { useRef, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import ShowProductHeader from "./ShowProductHeader";
+// import ShowProductHeader from "./ShowProductHeader";
 import Footer from "./Footer";
 
 export default function HomeFragrance() {
@@ -193,7 +193,7 @@ const stopDrag = () => {
 
   return (
     <>
-      <ShowProductHeader />
+      {/* <ShowProductHeader /> */}
       <div className="px-6 py-4">
         {categories.map((category) => {
           const selectedSize = selectedSizes[category] || "";
