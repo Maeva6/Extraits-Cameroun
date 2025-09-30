@@ -3,12 +3,12 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ConfirmDialog from '../../reutilisable/popUpSuppressionProduit';
 import NotificationsAdmin from '../../reutilisable/notificationAdmin';
-import DatePicker from 'react-datepicker';
+// import DatePicker from 'react-datepicker';
 import axios from 'axios';
-import 'react-datepicker/dist/react-datepicker.css';
+// import 'react-datepicker/dist/react-datepicker.css';
 import { useNavigate } from 'react-router-dom';
 import ProduitDetailsModal from '../pageAdminDetails/ProduitDetailsModal';
-import '../../../../css/datepicker-overrides.css'; 
+// import '../../../../css/datepicker-overrides.css'; 
 
 
 export default function ProduitAdmin() {

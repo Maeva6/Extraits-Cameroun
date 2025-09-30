@@ -2,7 +2,7 @@ import { Bell, User, Plus, Download, Search, Trash } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
 import { useState } from 'react';
-import 'react-datepicker/dist/react-datepicker.css';
+// import 'react-datepicker/dist/react-datepicker.css';
 
 export default function HistoriqueAdmin() {
     const [searchTerm, setSearchTerm] = useState('');
