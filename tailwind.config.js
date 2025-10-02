@@ -9,6 +9,9 @@ export default {
     './resources/**/*.blade.php',
     './resources/js/**/*.jsx',
     './resources/**/*.js',
+    './resources/**/*.ts',
+    './resources/**/*.tsx',
+    './resources/**/*.vue',
   ],
 
   theme: {
