@@ -12,6 +12,32 @@ export default {
     './resources/**/*.ts',
     './resources/**/*.tsx',
     './resources/**/*.vue',
+  './resources/views/**/*.blade.php',
+  './resources/js/Pages/**/*.jsx',
+  './resources/js/Components/**/*.jsx',
+],
+
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+      },
+    },
+  },
+  safelist: [
+    'text-yellow-500',
+    'bg-yellow-100',
+    'hover:text-yellow-600',
+    'font-montserrat',
+    'md:top-20',
+    'md:right-4',
+    'text-center',
+    'text-sm',
+    'text-lg',
+    'z-50',
+    'fixed',
+    'top-4',
+    'right-2',
   ],
 
   theme: {
@@ -21,7 +47,6 @@ export default {
       },
     },
   },
-
   plugins: [
     forms,
   ],
