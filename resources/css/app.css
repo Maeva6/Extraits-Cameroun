@@ -1,6 +1,16 @@
+/* resources/css/app.css */
+
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
+/* <--- VOUS DEVEZ DÉPLACER TOUT VOTRE CODE PERSONNALISÉ
+         APRÈS CE POINT (LIGNE 4).
+*/
+
+/* ======================================
+    ↓ VOS STYLES COMMENCENT ICI
+    ======================================
+*/
 
 body {
   overflow-x: hidden;
@@ -12,20 +22,6 @@ body {
 
 /* Bouton Clear (×) */
 .react-datepicker__close-icon::after {
-  background-color: #D4AF37 !important;
-  color: white !important;
-  border-radius: 50% !important;
-  padding: 2px !important;
-  font-size: 12px !important;
-  width: 16px !important;
-  height: 16px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  transition: background-color 0.2s !important;
-}
-
-.react-datepicker__close-icon:hover::after {
   background-color: #B79530 !important;
 }
 
