@@ -2,14 +2,14 @@
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities; 
+@tailwind utilities;
 /* <--- VOUS DEVEZ DÉPLACER TOUT VOTRE CODE PERSONNALISÉ
          APRÈS CE POINT (LIGNE 4).
 */
 
 /* ======================================
     ↓ VOS STYLES COMMENCENT ICI
-    ======================================
+    =====================================
 */
 
 body {
