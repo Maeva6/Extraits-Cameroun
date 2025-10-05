@@ -35,6 +35,7 @@ export default {
         'bg-yellow-500',
         'hover:text-yellow-600',
         'font-montserrat',
+        'font-bold',
         'md:top-20',
         'md:right-4',
         'text-center',
