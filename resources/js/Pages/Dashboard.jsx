@@ -38,14 +38,14 @@ export default function Dashboard() {
     <div className="relative font-montserrat font-bold min-h-screen pt-20 md:pt-20 flex flex-col justify-between overflow-x-hidden"> 
       <Header /> 
 
-      {/* Hero Section */} 
-      <section className="relative">
-        <img src={font} alt="Hero" className="w-full h-96 object-cover" />
-        <div className="absolute inset-0 bg-opacity-30 flex flex-col items-center justify-center text-white text-center p-4">
-         <h1 className="text-3xl md:text-5xl font-bold">Sentez la différence, Vivez l'élégance.</h1>
-          <p className="text-lg mt-2">Nous sélectionnons nos fragrances avec délicatesse...</p>
-        </div>
-      </section>
+     {/* Hero Section (Adapté) */} 
+<section className="relative">
+<img src={font} alt="Hero" className="w-full h-[24rem] object-cover" />
+<div className="absolute inset-0 bg-opacity-30 flex flex-col items-center justify-center text-white text-center p-[1rem]">
+<h1 className="text-[2rem] md:text-[3rem] font-bold">...</h1> {/* 3xl/5xl adaptés */}
+<p className="text-[1.125rem] mt-[0.5rem]">...</p> {/* lg/mt-2 adaptés */}
+ </div>
+</section>
 
       {/* Find My Fragrance avec carrousel à gauche */}
       <section className="bg-white py-16">
