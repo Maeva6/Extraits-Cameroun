@@ -32,6 +32,7 @@ export default {
     safelist: [
         'text-yellow-500',
         'bg-yellow-100',
+        'bg-yellow-500',
         'hover:text-yellow-600',
         'font-montserrat',
         'md:top-20',
