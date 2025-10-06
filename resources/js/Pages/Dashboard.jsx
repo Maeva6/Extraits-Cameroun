@@ -38,14 +38,14 @@ export default function Dashboard() {
     <div className="relative font-montserrat font-bold min-h-screen pt-20 md:pt-20 flex flex-col justify-between overflow-x-hidden"> 
       <Header /> 
 
-     {/* Hero Section (Adapté) */} 
-<section className="relative">
-<img src={font} alt="Hero" className="w-full h-[24rem] object-cover" />
-<div className="absolute inset-0 bg-opacity-30 flex flex-col items-center justify-center text-white text-center p-[1rem]">
-<h1 className="text-[2rem] md:text-[3rem] font-bold">...</h1> {/* 3xl/5xl adaptés */}
-<p className="text-[1.125rem] mt-[0.5rem]">...</p> {/* lg/mt-2 adaptés */}
- </div>
-</section>
+      {/* Hero Section */} 
+      <section className="relative">
+        <img src={font} alt="Hero" className="w-full h-96 object-cover" />
+        <div className="absolute inset-0 bg-opacity-30 flex flex-col items-center justify-center text-white text-center p-4">
+         <h1 className="text-3xl md:text-5xl font-bold">Sentez la différence, Vivez l'élégance.</h1>
+          <p className="text-lg mt-2">Nous sélectionnons nos fragrances avec délicatesse...</p>
+        </div>
+      </section>
 
       {/* Find My Fragrance avec carrousel à gauche */}
       <section className="bg-white py-16">
@@ -82,13 +82,13 @@ export default function Dashboard() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-4xl font-bold mb-6 text-yellow-700">Trouvez votre parfum parfait</h2>
+            {/* <h2 className="text-4xl font-bold mb-6 text-yellow-700">Trouvez votre parfum parfait</h2>
             <p className="text-gray-600 mb-6 text-lg">
               Répondez à quelques questions pour découvrir une fragrance qui vous correspond vraiment.
             </p>
             <p className="text-xs text-gray-400 mb-6">
               En continuant, vous acceptez nos Conditions d'utilisation et notre Politique de confidentialité.
-            </p>
+            </p> */}
             <button
               onClick={() => router.visit('/find-my-fragrance')}
               className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 text-lg rounded-xl"
