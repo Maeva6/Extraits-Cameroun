@@ -3,24 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* <--- VOUS DEVEZ DÉPLACER TOUT VOTRE CODE PERSONNALISÉ
-         APRÈS CE POINT (LIGNE 4).
-*/
 
-/* ======================================
-    ↓ VOS STYLES COMMENCENT ICI
-    =====================================
-*/
 
 body {
   overflow-x: hidden;
 }
 
-/* ==================== */
-/* OVERRIDES PRINCIPAUX */
-/* ==================== */
 
-/* Bouton Clear (×) */
 .react-datepicker__close-icon::after {
   background-color: #B79530 !important;
 }
